@@ -1,24 +1,33 @@
 {
   "name": "ts-monorepos-v2",
-  "version": "1.0.0",
   "description": "",
+  "version": "1.0.0",
+  "author": "",
+  "devDependencies": {
+    "@manypkg/cli": "^0.25.1",
+    "axios": "^1.6.0",
+    "lerna": "^9.0.3",
+    "lodash": "^4.17.21",
+    "syncpack": "^14.0.0-alpha.41"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "manypkg": {},
+  "packageManager": "pnpm@10.26.2",
   "private": "true",
   "scripts": {
     "build": "pnpm --color run -r build",
-    "lint": "pnpm --color run -r lint",
+    "check": "pnpm --color run -r check",
     "dev": "pnpm --color run -r dev",
-    "test": "pnpm --color run -r test",
     "format": "pnpm --color run -r format",
-    "check": "pnpm --color run -r check"
+    "lint": "pnpm --color run -r lint",
+    "syncpack:check": "syncpack lint && syncpack format --check",
+    "syncpack:fix": "syncpack fix && syncpack format",
+    "syncpack:list": "syncpack list",
+    "syncpack:update": "syncpack update",
+    "test": "pnpm --color run -r test"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.26.2",
   "volta": {
     "node": "22.16.0"
-  },
-  "devDependencies": {
-    "lerna": "^9.0.3"
   }
 }

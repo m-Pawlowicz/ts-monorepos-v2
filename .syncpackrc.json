@@ -1,0 +1,24 @@
+{
+  "$schema": "./node_modules/syncpack/dist/schema.json",
+  "indent": "  ",
+  "source": [
+    "package.json",
+    "packages/*/package.json"
+  ],
+  "versionGroups": [
+    {
+      "label": "Use workspace protocol for local packages",
+      "dependencies": ["$LOCAL"],
+      "dependencyTypes": ["dev", "prod"],
+      "pinVersion": "workspace:*"
+    }
+  ],
+  "semverGroups": [
+    {
+      "label": "Use caret ranges for all dependencies",
+      "range": "^",
+      "dependencyTypes": ["prod", "dev", "peer"],
+      "packages": ["**"]
+    }
+  ]
+}
