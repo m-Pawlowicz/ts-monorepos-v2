@@ -5,10 +5,13 @@
   "author": "",
   "devDependencies": {
     "@manypkg/cli": "^0.25.1",
+    "@types/node": "^24.0.0",
     "axios": "^1.6.0",
+    "knip": "^5.83.1",
     "lerna": "^9.0.3",
     "lodash": "^4.17.21",
-    "syncpack": "^14.0.0-alpha.41"
+    "syncpack": "^14.0.0-alpha.41",
+    "typescript": "^5.9.3"
   },
   "keywords": [],
   "license": "ISC",
@@ -25,7 +28,9 @@
     "syncpack:fix": "syncpack fix && syncpack format",
     "syncpack:list": "syncpack list",
     "syncpack:update": "syncpack update",
-    "test": "pnpm --color run -r test"
+    "test": "pnpm --color run -r test",
+    "knip:check": "knip",
+    "knip:fix": "knip --fix"
   },
   "volta": {
     "node": "22.16.0"
