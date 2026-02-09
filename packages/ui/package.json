@@ -1,5 +1,5 @@
 {
-  "name": "seeds",
+  "name": "@seeds/ui",
   "private": true,
   "version": "0.0.0",
   "type": "module",

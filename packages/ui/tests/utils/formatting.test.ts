@@ -11,7 +11,7 @@ import type {
 	USDAHardinessZoneRangeMap,
 	SeedPacketInfo,
 	Distance,
-} from '../../src/models/seed-packet.model.js'
+} from '../../../models/src/seed-packet.model.js'
 
 describe('formatUSDAZone', () => {
 	it('should format single zone from multiSeason', () => {

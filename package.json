@@ -17,5 +17,8 @@
   "packageManager": "pnpm@10.26.2",
   "volta": {
     "node": "22.16.0"
+  },
+  "devDependencies": {
+    "lerna": "^9.0.3"
   }
 }

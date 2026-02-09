@@ -1,0 +1,27 @@
+{
+  "name": "@seeds/models",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "private": true,
+  "homepage": "https://github.com/m-Pawlowicz/ts-monorepos-v2#readme",
+  "bugs": {
+    "url": "https://github.com/m-Pawlowicz/ts-monorepos-v2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-Pawlowicz/ts-monorepos-v2.git"
+  },
+  "license": "ISC",
+  "author": "pawlowiczm <michal.pawlowicz.dev@gmail.com>",
+  "main": "lib/models.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/@seeds/models.test.js"
+  }
+}
