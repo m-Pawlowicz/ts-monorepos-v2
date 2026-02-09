@@ -1,0 +1,51 @@
+{
+  "name": "@seeds/server",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "private": true,
+  "homepage": "https://github.com/m-Pawlowicz/ts-monorepos-v2#readme",
+  "bugs": {
+    "url": "https://github.com/m-Pawlowicz/ts-monorepos-v2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-Pawlowicz/ts-monorepos-v2.git"
+  },
+  "license": "ISC",
+  "author": "pawlowiczm <michal.pawlowicz.dev@gmail.com>",
+  "main": "lib/server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/@seeds/server.test.js",
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsx --watch --watch-preserve-output src/index.ts"
+  },
+  "exports": {
+    "types": "./src/index.ts"
+  },
+  "publishConfig": {
+    "exports": {
+      "types": "./dist/index.d.ts",
+      "module": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "@seeds/models": "workspace:*",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "winston": "^3.18.0",
+    "yaml": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.0",
+    "typescript": "5.9.3"
+  }
+}
