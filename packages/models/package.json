@@ -21,7 +21,6 @@
   ],
   "homepage": "https://github.com/m-Pawlowicz/ts-monorepos-v2#readme",
   "license": "ISC",
-  "main": "lib/models.js",
   "private": true,
   "publishConfig": {
     "exports": {

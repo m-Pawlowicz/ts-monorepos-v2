@@ -4,12 +4,8 @@
   "version": "1.0.0",
   "author": "",
   "devDependencies": {
-    "@manypkg/cli": "^0.25.1",
     "@types/node": "^24.0.0",
-    "axios": "^1.6.0",
     "knip": "^5.83.1",
-    "lerna": "^9.0.3",
-    "lodash": "^4.17.21",
     "syncpack": "^14.0.0-alpha.41",
     "typescript": "^5.9.3"
   },

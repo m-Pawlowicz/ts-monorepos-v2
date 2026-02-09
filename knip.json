@@ -13,7 +13,6 @@
     "**/*.test.js"
   ],
   "ignoreDependencies": [
-    "@tsconfig/svelte",
-    "sass-embedded"
+    "@tsconfig/svelte"
   ]
 }

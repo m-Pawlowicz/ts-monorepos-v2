@@ -8,7 +8,7 @@ export interface ServerConfigParams {
 	logLevel?: string
 }
 
-export class ServerConfig {
+class ServerConfig {
 	#logger!: Logger
 	constructor(private readonly params: ServerConfigParams) {
 		if (!this.params.port) {
