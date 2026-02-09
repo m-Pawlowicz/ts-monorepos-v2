@@ -1,40 +1,40 @@
 {
   "name": "@seeds/models",
-  "version": "0.0.0",
   "description": "> TODO: description",
-  "private": true,
-  "homepage": "https://github.com/m-Pawlowicz/ts-monorepos-v2#readme",
+  "version": "0.0.0",
+  "author": "pawlowiczm <michal.pawlowicz.dev@gmail.com>",
   "bugs": {
     "url": "https://github.com/m-Pawlowicz/ts-monorepos-v2/issues"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/m-Pawlowicz/ts-monorepos-v2.git"
+  "devDependencies": {
+    "typescript": "^5.9.3"
   },
-  "license": "ISC",
-  "author": "pawlowiczm <michal.pawlowicz.dev@gmail.com>",
-  "main": "lib/models.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
   },
-  "files": [
-    "src"
-  ],
-  "scripts": {
-    "test": "node ./__tests__/@seeds/models.test.js",
-    "build": "tsc -p tsconfig.build.json"
-  },
   "exports": {
     "types": "./src/index.ts"
   },
+  "files": [
+    "src"
+  ],
+  "homepage": "https://github.com/m-Pawlowicz/ts-monorepos-v2#readme",
+  "license": "ISC",
+  "main": "lib/models.js",
+  "private": true,
   "publishConfig": {
     "exports": {
       "types": "./dist/index.d.ts",
       "module": "./dist/index.js"
     }
   },
-  "devDependencies": {
-    "typescript": "5.9.3"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-Pawlowicz/ts-monorepos-v2.git"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "node ./__tests__/@seeds/models.test.js"
   }
 }
