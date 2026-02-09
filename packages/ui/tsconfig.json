@@ -1,18 +1,16 @@
 {
-	"extends": "../../tsconfig.base.json",
-	"include": [
-		"src/**/*.ts",
-		"src/**/*.js",
-		"src/**/*.svelte",
-		"tests/**/*.ts",
-		"tests/**/*.js",
-		"tests/**/*.svelte",
-		"tailwind.config.js",
-		"postcss.config.cjs",
-		"vite.config.ts",
-		"svelte.config.js",
-		"eslint.config.mts",
-		"../models/src/seed-packet-collection.model.ts",
-		"../models/src/seed-packet-collection.model.ts"
-	]
+    "extends": "../../tsconfig.json",
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.js",
+        "src/**/*.svelte",
+        "tests/**/*.ts",
+        "tests/**/*.js",
+        "tests/**/*.svelte",
+        "tailwind.config.js",
+        "postcss.config.cjs",
+        "vite.config.ts",
+        "svelte.config.js",
+        "eslint.config.mts"
+    ]
 }
